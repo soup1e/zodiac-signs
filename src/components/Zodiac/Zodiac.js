@@ -1,12 +1,12 @@
 import './Zodiac.css';
 
-export default function Zodiac({ zodiac: { name, dates, symbol } }) {
+export default function Zodiac({ zodiac: { name, dates } }) {
   return (
     <>
-      <ul className="zodiacCard">
+      <ul className="ZodiacCard">
+        <img alt={name} src={`/cards/${name}.png`} />
         <li className="name">{name}</li>
         <li className="dates">{dates}</li>
-        <li className="symbol">{symbol}</li>
       </ul>
     </>
   );
